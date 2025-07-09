@@ -8,7 +8,7 @@ export default function Index() {
     <View style={styles.container}>
 
       <Link
-        href="/flexbox/ex01"
+        href="/flexbox/ex04"
         style={{
           marginTop: 24,
           padding: 12,
@@ -18,6 +18,8 @@ export default function Index() {
       >
         <Text style={{ color: "#fff", fontWeight: "bold" }}>ไปหน้าที่ 2</Text>
       </Link>
+
+
 
 
       <Link href="/test-components" style={styles.link}>
