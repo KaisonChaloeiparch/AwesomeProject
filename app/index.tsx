@@ -8,7 +8,7 @@ export default function Index() {
     <View style={styles.container}>
 
       <Link
-        href="/flexbox/ex04"
+        href="/flexbox/ex06"
         style={{
           marginTop: 24,
           padding: 12,
