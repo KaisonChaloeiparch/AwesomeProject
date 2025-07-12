@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={{ flex: 1, justifyContent: 'space-between', padding: 20 }}>
+    <View style={{ flex: 1, justifyContent: 'space-around', padding: 20 }}>
       
       {/* แถวที่ 1 */}
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
