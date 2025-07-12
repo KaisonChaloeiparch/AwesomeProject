@@ -8,7 +8,7 @@ export default function Index() {
     <View style={styles.container}>
 
       <Link
-        href="/flexbox/ex06"
+        href="/flexbox/ex09"
         style={{
           marginTop: 24,
           padding: 12,
@@ -16,7 +16,8 @@ export default function Index() {
           borderRadius: 8,
         }}
       >
-        <Text style={{ color: "#fff", fontWeight: "bold" }}>ไปหน้าที่ 2</Text>
+
+        <Text style={{ color: "#fff", fontWeight: "bold" }}>เด้งไปหน้าที่ 2</Text>
       </Link>
 
 
