@@ -11,6 +11,8 @@ export default function Resort() {
 
                 {/* <Text>Text of Resort </Text> */}
                 <Section1 />
+                <Section2 />
+                <Section3 />
           
                 
                                
