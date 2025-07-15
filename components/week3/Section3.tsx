@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function Section() {
+export default function Section3() {
   return (
     <View style={styles.row}>
       {/* วงกลมคะแนน */}
