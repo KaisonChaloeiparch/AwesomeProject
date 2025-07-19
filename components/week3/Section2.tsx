@@ -5,24 +5,31 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Section2() {
     return (
         <View style={styles.container}>
-            {/* กรอบพื้นหลังสีเทา */}
+
+            <View style={{ backgroundColor: "red" }}>
+
+            </View>
+
+            <View style={{ backgroundColor: "red", marginTop: -50 }}>
+
+            </View>
             <View style={styles.grayBox}>
                 <Text style={styles.title}>Hilton San Francisco</Text>
-
                 <View style={styles.row}>
-                    {/* แสดงไอคอนดาว 5 ดวง */}
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(4)].map((_, index) => (
                         <FontAwesome
                             key={index}
                             name="star"
                             size={20}
                             color="#FFD700"
-                            style={{
-                                marginRight: 10
-
-                            }}
+                            style={{ marginRight: 5 }}
                         />
                     ))}
+                    <FontAwesome
+                        name="star-half-full" // หรือ "star-half"
+                        size={20}
+                        color="#FFD700"
+                    />
                 </View>
 
                 <Text style={styles.description}>
@@ -36,35 +43,34 @@ export default function Section2() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 30,
+        marginTop: -25,
         padding: 20,
+        backgroundColor: '#fff',
     },
     grayBox: {
-        backgroundColor: '#eee',      // สีพื้นหลังเทา
-        padding: 20,                  // เว้นขอบด้านใน
-        borderRadius: 10,            // มุมโค้ง
-        shadowColor: '#000',         // เงา (iOS)
+        backgroundColor: '#eee',
+        padding: 20,
+        borderRadius: 10,
+        shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.1,
         shadowRadius: 4,
-        elevation: 3,                // เงา (Android)
+        elevation: 3,
     },
     title: {
         textAlign: 'center',
-        fontSize: 22,
+        fontSize: 20,
         fontWeight: 'bold',
-        marginBottom: 10,
+        marginBottom: 5,
     },
     row: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginBottom: 10,
+        marginBottom: 5,
     },
     description: {
         textAlign: 'center',
-        fontSize: 16,
+        fontSize: 11,
         color: '#333',
     },
-
-    
 });
