@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   label: {
-    marginTop: 5,
+    marginTop: -5,
     fontSize: 12,
     color: '#aaa',
   },

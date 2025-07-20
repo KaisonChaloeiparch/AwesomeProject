@@ -16,6 +16,10 @@ export default function Index() {
         <Text style={styles.linkText}>Resort</Text>
       </Link>
 
+            <Link href="/review" style={styles.link}>
+        <Text style={styles.linkText}>Review</Text>
+      </Link>
+
       <Link
         href="/flexbox/ex12"
         style={{
