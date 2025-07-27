@@ -8,6 +8,7 @@ export default function review() {
     <ScrollView  style={{ margin : 20 }} >
          {/* <Text>Text of Week 3 </Text>  */}
          <Review1 />
+        
 
 
     </ScrollView>
