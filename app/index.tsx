@@ -8,6 +8,11 @@ export default function Index() {
   return (
     <View style={styles.container}>
 
+      <Link href="/home" style={styles.link}>
+        <Text style={styles.linkText}>Home</Text>
+      </Link>
+
+
       <Link href="/health" style={styles.link}>
         <Text style={styles.linkText}>Health</Text>
       </Link>
@@ -42,12 +47,14 @@ export default function Index() {
 
 
       {/* <Link href="/test-components" style={styles.link}> */}
-        {/* <Text style={styles.linkText}>Test Components</Text> */}
+      {/* <Text style={styles.linkText}>Test Components</Text> */}
       {/* </Link> */}
 
 
       <Text>Flexbox Menu</Text>
       <FlexboxMenu />
+
+      
       <Link href="/test-greeting" style={styles.link}>
         <Text style={styles.linkText}>Test Greeting</Text>
       </Link>
