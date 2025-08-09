@@ -11,6 +11,10 @@ export default function Index() {
       <Link href="/home" style={styles.link}>
         <Text style={styles.linkText}>Home</Text>
       </Link>
+      
+      <Link href="/flatlistexample" style={styles.link}>
+        <Text style={styles.linkText}>Flatlist Example</Text>
+      </Link>
 
 
       <Link href="/health" style={styles.link}>
