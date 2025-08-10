@@ -8,10 +8,17 @@ export default function Index() {
   return (
     <View style={styles.container}>
 
+      <Link href="/event" style={styles.link}>
+        <Text style={styles.linkText}>Event</Text>
+      </Link>
+
       <Link href="/home" style={styles.link}>
         <Text style={styles.linkText}>Home</Text>
       </Link>
-      
+
+
+
+
       <Link href="/flatlistexample" style={styles.link}>
         <Text style={styles.linkText}>Flatlist Example</Text>
       </Link>
@@ -33,6 +40,7 @@ export default function Index() {
       <Link href="/review" style={styles.link}>
         <Text style={styles.linkText}>Review</Text>
       </Link>
+
 
       <Link
         href="/flexbox/ex12"
@@ -58,7 +66,7 @@ export default function Index() {
       <Text>Flexbox Menu</Text>
       <FlexboxMenu />
 
-      
+
       <Link href="/test-greeting" style={styles.link}>
         <Text style={styles.linkText}>Test Greeting</Text>
       </Link>
