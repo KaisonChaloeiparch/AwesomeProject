@@ -1,16 +1,26 @@
 import FlexboxMenu from "@/components/FlexboxMenu";
 import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 
 
 export default function Index() {
   return (
+
+    <ScrollView>
     <View style={styles.container}>
 
-      <Link href="/event" style={styles.link}>
-        <Text style={styles.linkText}>Event</Text>
+      <Link href="/todolist" style={styles.link}>
+        <Text style={styles.linkText}>Todo List</Text>
       </Link>
+
+
+      <Link href="/your-health" style={styles.link}>
+        <Text style={styles.linkText}>Your Health</Text>
+      </Link>
+
+
+
 
       <Link href="/home" style={styles.link}>
         <Text style={styles.linkText}>Home</Text>
@@ -72,7 +82,7 @@ export default function Index() {
       </Link>
     </View>
 
-
+    </ScrollView>
 
 
 
