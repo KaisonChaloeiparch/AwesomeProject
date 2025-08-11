@@ -24,14 +24,9 @@ export default function Index() {
         </Link>
 
 
-
-
-
         <Link href="/home" style={styles.link}>
           <Text style={styles.linkText}>Home</Text>
         </Link>
-
-
 
 
         <Link href="/flatlistexample" style={styles.link}>
@@ -67,15 +62,13 @@ export default function Index() {
           }}
         >
 
-          <Text style={{ color: "#fff", fontWeight: "bold" }}>เด้งไปหน้าที่ 2</Text>
+          <Text style={{ color: "#fff", fontWeight: "bold" }}>เด้งไปหน้าที่ 2 Test</Text>
         </Link>
 
 
-
-
-        {/* <Link href="/test-components" style={styles.link}> */}
-        {/* <Text style={styles.linkText}>Test Components</Text> */}
-        {/* </Link> */}
+         <Link href="/test-components" style={styles.link}> 
+         <Text style={styles.linkText}>Test Components</Text> 
+         </Link>
 
 
         <Text>Flexbox Menu</Text>
