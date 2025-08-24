@@ -10,6 +10,11 @@ export default function Index() {
     <ScrollView>
       <View style={styles.container}>
 
+        <Link href="/location" style={styles.link}>
+          <Text style={styles.linkText}>Location</Text>
+        </Link>
+
+
         <Link href="/todolist" style={styles.link}>
           <Text style={styles.linkText}>Todo List</Text>
         </Link>
@@ -66,9 +71,9 @@ export default function Index() {
         </Link>
 
 
-         <Link href="/test-components" style={styles.link}> 
-         <Text style={styles.linkText}>Test Components</Text> 
-         </Link>
+        <Link href="/test-components" style={styles.link}>
+          <Text style={styles.linkText}>Test Components</Text>
+        </Link>
 
 
         <Text>Flexbox Menu</Text>
