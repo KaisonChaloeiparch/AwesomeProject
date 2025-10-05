@@ -10,6 +10,11 @@ export default function Index() {
     <ScrollView>
       <View style={styles.container}>
 
+        <Link href="/profile" style={styles.link}>
+          <Text style={styles.linkText}>profile</Text>
+        </Link>
+
+
         <Link href="/ant" style={styles.link}>
           <Text style={styles.linkText}>ant</Text>
         </Link>
