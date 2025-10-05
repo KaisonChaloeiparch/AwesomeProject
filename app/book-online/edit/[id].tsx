@@ -5,7 +5,7 @@ import * as ImagePicker from "expo-image-picker";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
 import { getBooks, updateBook } from "@/utils/book-storage";
 import { Book } from "@/utils/types";
-import { getBookByIdDatabase, getBooksDatabase, updateBookDatabase } from "@/utils/book-service";
+import { getBookByIdDatabase, getBooksDatabase, updateBookDatabase, uploadBookImage } from "@/utils/book-service";
 
 export default function EditBook() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -50,7 +50,10 @@ export default function EditBook() {
     });
     if (!res.canceled) {
       // setImage(res.uri);
-      setImage(res.assets[0].uri);
+      //setImage(res.assets[0].uri);
+      const uploadedUrl = await uploadBookImage(res.assets[0].uri);
+      setImage(uploadedUrl);
+      console.log("Uploaded image URL:", uploadedUrl);
     }
   };
 
@@ -69,7 +72,7 @@ export default function EditBook() {
     };
     //await updateBook(updated);
     await updateBookDatabase(id, updated);
-    
+
     router.navigate(`/book-online/${book.id}`);
   };
 
